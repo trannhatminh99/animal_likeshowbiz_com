@@ -65,7 +65,7 @@ export default {
                 {
                     hid: 'og-title',
                     property: 'og:title',
-                    content: '&#12644; &#x3164;',
+                    content: this.metadata.title,
                 },
                 {
                     hid: 'og-type',
@@ -77,7 +77,11 @@ export default {
                     property: 'og:url',
                     content: this.path,
                 },
-            
+                {
+                    hid: 'og-description',
+                    property: 'og:description',
+                    content: '...',
+                },
 
                 {
                     hid: 'og-image',
